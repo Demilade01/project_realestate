@@ -26,11 +26,11 @@ const Property = ({ property }) => {
         area,
         agency,
         isVerified,
-        externalId,
+        externalID,
     } = property;
 
     return (
-        <Link href={`/property/${externalId}`} passHref>
+        <Link href={`/property/${externalID}`} passHref>
             <Flex flexWrap="wrap" w="420px" p="5" paddingTop="0" justifyContent="flex-start" cursor="pointer" >
                 <Box>
                     <Image src={coverPhoto ? coverPhoto.url : DefaultImage} width={400} height={260} alt="house" />
